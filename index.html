@@ -56,16 +56,20 @@
           <div class="inputs-container">
             <p class="pwd">
               <label for="pwd">PASSWORD</label>
-              <input type="password" id="pwd" name="pwd" />
+              <input type="password" id="pwd" name="pwd" class="error" />
               <span class="pwd">*Passwords do not much</span>
             </p>
-            
+
             <p class="pwd">
               <label for="confirm-pwd">CONFIRM PASSWORD</label>
-              <input type="text" if="confirm-pwd" name="confirm-password" />
+              <input
+                type="text"
+                id="confirm-pwd"
+                name="confirm-password"
+                class="error"
+              />
             </p>
           </div>
-          
         </div>
         <div class="right-bottom">
           <button type="submit">Create Account</button>
@@ -73,5 +77,13 @@
         </div>
       </form>
     </div>
+    <script>
+      const pwd = document.querySelector("#pwd");
+      const confirmPwd = document.querySelector("#confirm-pwd");
+
+      const dreateAccount = document.querySelector()
+
+
+    </script>
   </body>
 </html>
