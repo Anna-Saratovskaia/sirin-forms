@@ -10,7 +10,7 @@ body {
 }
 
 .outer-container {
-  width: 1300px;
+  max-width: 1300px;
   background-color: #eee;
   margin: 0 auto;
   display: flex;
@@ -47,13 +47,12 @@ h1 {
   color: white;
 }
 
-.left {
+.hero-photo {
   background-image: url("fern.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 75%;
   background-color: green;
 }
 
@@ -61,24 +60,24 @@ form {
   display: flex;
   flex-direction: column;
 }
-.right-middle {
+.form-inputs {
   background-color: white;
   box-shadow: var(--shadow);
 }
 
-.right-top,
-.right-middle,
-.right-bottom {
+.invitation,
+.form-inputs,
+.submit-area {
   padding: 30px;
   flex-basis: 33%;
 }
 
-.right-top-text {
+.invitation-text {
   font-size: 22px;
   font-weight: 700;
 }
 
-.inputs-container {
+.inputs-row {
   display: flex;
   gap: 100px;
 }
@@ -100,9 +99,9 @@ label {
   border: 1px solid red;
 }
 
-.error:valid {
+/* .error:valid {
   border: 1px solid #e5e7eb;
-}
+} */
 
 input {
   width: 250px;
@@ -128,6 +127,12 @@ button {
   box-shadow: var(--shadow);
 }
 
+button:hover {
+  border: 2px solid var(--button-color);
+  box-shadow: var(--shadow);
+  background-color: #6d8658;
+}
+
 .right-bottom {
   font-weight: 600;
 }
@@ -140,5 +145,4 @@ button {
 .photo-credit-info a {
   font-size: 14;
   color: white;
-  text-decoration: none;
 }

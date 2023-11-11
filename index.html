@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="outer-container">
-      <div class="left">
+      <div class="hero-photo">
         <div class="baseplate">
           <img src="sirin-white.png" />
           <h1>SIRIN LTD</h1>
@@ -21,16 +21,16 @@
         >
       </div>
       <form>
-        <div class="right-top">
-          <p class="right-top-text">
+        <div class="invitation">
+          <p class="invitation-text">
             Я читал в одной книге, что, когда станет плохо И над миром взойдут
             <em>ледоруб да пила</em> Они снимутся с ветки, они взовьются в небо
             И возьмут <em>нас с тобою</em> под тугие крыла.
           </p>
         </div>
-        <div class="right-middle">
+        <div class="form-inputs">
           <h2 class="form-heading">Let's do this!</h2>
-          <div class="inputs-container">
+          <div class="inputs-row">
             <p>
               <label for="first-name">FIRST NAME</label>
               <input type="text" id="first-name" name="first-name" />
@@ -41,7 +41,7 @@
               <input type="text" id="last-name" name="last-name" />
             </p>
           </div>
-          <div class="inputs-container">
+          <div class="inputs-row">
             <p>
               <label for="email">EMAIL</label>
               <input type="email" id="email" name="email" />
@@ -49,21 +49,21 @@
 
             <p>
               <label for="tel">PHONE NUMBER</label>
-              <input type="tel" if="tel" name="tel" />
+              <input type="tel" id="tel" name="tel" />
             </p>
           </div>
 
-          <div class="inputs-container">
+          <div class="inputs-row">
             <p class="pwd">
               <label for="pwd">PASSWORD</label>
               <input type="password" id="pwd" name="pwd" class="error" />
-              <span class="pwd">*Passwords do not much</span>
+              <span class="pwd">*Passwords do not match</span>
             </p>
 
             <p class="pwd">
               <label for="confirm-pwd">CONFIRM PASSWORD</label>
               <input
-                type="text"
+                type="password"
                 id="confirm-pwd"
                 name="confirm-password"
                 class="error"
@@ -71,9 +71,9 @@
             </p>
           </div>
         </div>
-        <div class="right-bottom">
+        <div class="submit-area">
           <button type="submit">Create Account</button>
-          <p>Already have an account?<a> Log in</a></p>
+          <p>Already have an account?<a href="#"> Log in</a></p>
         </div>
       </form>
     </div>
@@ -81,9 +81,7 @@
       const pwd = document.querySelector("#pwd");
       const confirmPwd = document.querySelector("#confirm-pwd");
 
-      const dreateAccount = document.querySelector()
-
-
+      const dreateAccount = document.querySelector();
     </script>
   </body>
 </html>
