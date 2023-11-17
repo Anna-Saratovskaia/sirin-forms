@@ -11,10 +11,9 @@ body {
 
 .outer-container {
   max-width: 1300px;
-  background-color: #eee;
   margin: 0 auto;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 img {
   width: 74px;
@@ -54,15 +53,26 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   background-color: green;
+  min-width: 20em;
+  flex-grow: 1;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  flex-grow: 2;
+  background-color: #eee;
+  min-width: 40em;
 }
+
 .form-inputs {
   background-color: white;
   box-shadow: var(--shadow);
+}
+
+.invitation {
+  display: flex;
+  align-items: end;
 }
 
 .invitation,
@@ -89,18 +99,30 @@ label {
   color: #444;
 }
 
-.pwd span {
+.password-mismatch, .pwd-rules {
   display: block;
-  color: red;
   font-size: 14px;
+  padding-top: 10px;
+  width: 250px;
 }
 
-.error {
+.password-mismatch {
+    color: red;
+}
+
+input:invalid,
+input.error {
+  background-color: ivory;
+  border-color: red;
+}
+
+/* input:valid{
+    background-color: white;
+    border: 2px solid #596d48;
+} */
+
+/* .error {
   border: 1px solid red;
-}
-
-/* .error:valid {
-  border: 1px solid #e5e7eb;
 } */
 
 input {
@@ -111,7 +133,7 @@ input {
 }
 
 input:focus {
-  border: 1px solid #205acf;
+  outline: 1px solid #205acf;
   box-shadow: var(--shadow);
 }
 
@@ -137,8 +159,10 @@ button:hover {
   font-weight: 600;
 }
 
-.right-bottom a {
+a {
   color: var(--button-color);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .photo-credit-info,
